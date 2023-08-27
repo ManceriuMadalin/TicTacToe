@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Tektur&display=swap');
+
+* {
+     font-family: "Roboto";
+}
+
+body {
+     height: 100vh;
+     display: grid;
+     place-items: center;
+     background-image: linear-gradient(to right bottom, #160537, #003e7c, #0078ac, #00b3ba, #12eba9);
+}
+
+#board {
+     height: 50vmin;
+     width: 50vmin;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+
+#board div {
+     height: 30%;
+     width: 30%;
+     background-color: #f0fff8;
+     border-radius: 25%;
+     font-size: 3.75em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+form {
+     width: 60%;
+     position: absolute;
+     text-align: center;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 25px;
+}
+
+label {
+     font-size: 20px;
+     color: #fff;
+}
+
+input[type="text"] {
+     padding: 10px;
+     margin-top: 10px;
+     border: none;
+     border-radius: 4px;
+     font-size: 16px;
+}
+
+input[type="submit"] {
+     background-color: #007bff;
+     color: #fff;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+}
+
+input[type="submit"]:hover {
+     background-color: #0056b3;
+}
+
+#retry {
+     display: none;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+#retryBtn {
+     width: 50%;
+     margin-top: 10px;
+}
